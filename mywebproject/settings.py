@@ -52,7 +52,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mywebproject.urls'
-TEMPLTE_PATH = os.path.join(BASE_DIR, 'templates')
+
 
 TEMPLATES = [
     {
