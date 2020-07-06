@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="css/fixed.css.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -20,7 +21,7 @@
       <div id="home">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <a class="navbar-brand" href="#">MANISH KUMAR</a>
+          <a class="navbar-brand" href="#"> <strong>MK</strong></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -55,9 +56,9 @@
           </div>
         </div>
   
-        <div class="caption text-center text-white">
+        <div class="caption text-center">
           <h1 class="pb-1">Manish Kumar</h1>
-            <h3 class="pb-1">Welcome To my Blog </h3>
+            <h3 class="pb-1">Welcome To My Blog </h3>
         </div>
         <!-- end landing page -->
         
@@ -73,11 +74,10 @@
 <section id="aboutMe" class="offset">
   <div class="black-bg pb-3">
     <div class="container">
-      <h1 class="text-center text-white pt-5 abm">ABOUT ME</h1>
-      <div class="heading-underline mb-4 w-10"></div>
+      <h1 class="text-center text-white pt-5 abm mb-5">ABOUT ME</h1>
       <div class="row mb-5">
           <div class="col-lg-6 col-md-6 col-12 ">
-              <img class="rounded-circle mx-auto d-block shadow-lg p-2 mb-5 bg-white rounded img-fluid" src="/IMG/mine.jpg" class="rounded-circle" height="auto" width="60%">
+              <img class="rounded-circle mx-auto d-block shadow-lg p-2 mb-5 bg-white rounded img-fluid" src="/static/img/mine.jpg" class="rounded-circle" height="auto" width="60%">
               <div class="heading-underline2 mb-4 w-10"></div>
               <h4 class="title text-white text-center">DARPAN SINGH</h4>
               <p class="prof text-center pb-3">WEB DEVELOPER</p>
@@ -117,7 +117,7 @@
     </div>
   <div class="card-deck text-center">
     <div class="card">
-      <img class="card-img-top " src="/IMG/bg1.jpg" alt="Card image cap">
+      <img class="card-img-top " src="/static/img/card1.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">E-commerce</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -148,7 +148,7 @@
     </div>
 
     <div class="card">
-      <img class="card-img-top " src="/IMG/bg1.jpg" alt="Card image cap">
+      <img class="card-img-top " src="/static/img/card3.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Port-Folio</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -180,7 +180,7 @@
     </div>
 
     <div class="card">
-      <img class="card-img-top " src="/IMG/bg1.jpg" alt="Card image cap">
+      <img class="card-img-top " src="/static/img/card2.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Bussiness</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -252,10 +252,10 @@
       <div class='col-lg-3 col-md-6 col-sm-12'>
         <i class="fas fa-palette"></i>
         <h1>DESIGN</h1>
-        <img src="IMG/photoshop.png" alt="sketch" class="img-fluid">
-          <img src="IMG/coreldraw.png" alt="" class="img-fluid">
-          <img src="IMG/illustrator.png"  class="img-fluid ml-2">
-          <img src="IMG/white-inde.png" alt="" class="img-fluid ml-2">
+        <img src="/static/img/photoshop.png" alt="sketch" class="img-fluid">
+          <img src="/static/img/coreldraw.png" alt="" class="img-fluid">
+          <img src="/static/img/illustrator.png"  class="img-fluid ml-2">
+          <img src="/static/img/white-inde.png" alt="" class="img-fluid ml-2">
       </div>
       <!-- END THIRD COL -->
       <div class='col-lg-3 col-md-6 col-sm-12'>
@@ -325,7 +325,7 @@
             <textarea class="form-control"></textarea>
           </div>
         </div>
-        <button class="btn btn-outline-info btnmsg" href="" data-target="#">Send Message</button>
+        <button class="btn btn-warning btnmsg" href="" data-target="#">Send Message</button>
 
       </div>
 
@@ -400,6 +400,7 @@
   
   </div>
 </footer>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15094.779871241746!2d84.57635901865454!3d18.944891144610366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d12beac5e66d1%3A0xa72168621bc6c63e!2sSompeta%2C%20Andhra%20Pradesh%20532284!5e0!3m2!1sen!2sin!4v1594000702226!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="w-100"></iframe>
 
 
 
