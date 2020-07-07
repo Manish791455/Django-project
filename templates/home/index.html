@@ -2,414 +2,238 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/644b4096ee.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/fixed.css' %}">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- external css  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    
+    <title>Hello, world!</title>
   </head>
-  <body data-spy="scroll" data-target="#navbarResponsive">
-  
-  
- <!-- home section  -->
-      <div id="home">
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <a class="navbar-brand" href="#"> <strong>MK</strong></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item ">
-                <a class="nav-link js-scroll-trigger" href="#home"><i class="fas fa-home"></i>Home </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#aboutMe">About me </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#project">Project</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact Me </a>
-                </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- nav bar ends -->
-        <!-- landing page -->
-        <div class="landing">
-          <div class="home-wrap">
-            <div class="home-inner">
-  
+  <body>
+      <!-- about navbar and bg-itle-->
+    <div class='navbg'>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#"><strong>MANISH</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#abtme">About me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#pjct">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#cnt">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <!-- bg title -->
+              <div class="text-white  bg-title">
+                <h2>Manish Kumar</h2>
+                <h3><small>Turn Your Wounds Into Wisdom</small></h3>
             </div>
-          </div>
         </div>
-  
-        <div class="caption text-center">
-          <h1 class="pb-1">Manish Kumar</h1>
-            <h3 class="pb-1">Welcome To My Blog </h3>
-        </div>
-        <!-- end landing page -->
-        
-          
-      </div>
+    </div>
+    <!-- navbar end -->
 
-      <!-- <section class="banner d-flex justify-content-center">
-        <a href="#aboutMe" class="btn_down"><i class="fas fa-chevron-down "></i></a>
-      </section> -->
-<!-- end home secction -->
-      
-
-<section id="aboutMe" class="offset">
-  <div class="black-bg pb-3">
+    <!-- about about -->
+<div class="aboutbg" id="abtme">
     <div class="container">
-      <h1 class="text-center text-white pt-5 abm mb-5">ABOUT ME</h1>
-      <div class="row mb-5">
-          <div class="col-lg-6 col-md-6 col-12 ">
-              <img class="rounded-circle mx-auto d-block shadow-lg p-2 mb-5 bg-white rounded img-fluid" src="/static/img/mine.jpg" class="rounded-circle" height="auto" width="60%">
-              <div class="heading-underline2 mb-4 w-10"></div>
-              <h4 class="title text-white text-center">DARPAN SINGH</h4>
-              <p class="prof text-center pb-3">WEB DEVELOPER</p>
-              <div class="d-flex justify-content-center">
-              <a href="https://twitter.com/DarpanSinghk"><i class="fab fa-twitter "></i></a>
-              <a href="https://www.facebook.com/darpan.singh.7503/"><i class="fab fa-facebook-f ml-4 mr-4"></i></a>
-              <a href="https://www.instagram.com/the_jingzi02/"><i class="fab fa-instagram"></i></a>
-              <!-- <i class="fab fa-linkedin-in"></i> -->
+        <h2 class="text-center pt-5 am-txt">About Me</h2>
+        <div class="row pt-5 aboutbg">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="/static/img/propic.jpg" alt="" class=" propic rounded-circle mx-auto d-block img-fluid shadow-lg p-2 mb-5 bg-white rounded" alt="100x100">
+              <div class="abticon text-center pb-3">
+                <a href="https://www.facebook.com/profile.php?id=100013910611307">  <i class="fab fa-facebook-square text-priary"></i></a>
+                <a href="https://www.instagram.com/manish_791455/?hl=en"><i class="fab fa-instagram-square text-danger pr-4 pl-4"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=9494151577"><i class="fab fa-whatsapp-square text-success"></i></a>
+              </div>
+              </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3 class="am-mk mt-3">Manish Kumar</h3>
+                <div class="text-justify mt-3 am-deta">
+                    Hi Iam Manish. Iam a web developer and a graphic designer.
+                    I this world everyone has/her own talent, i dont care about that people who hates me.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                       voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class='am-btn'>
+                    <a href="" class="btn btn-primary mt-3 mb-3">Resume</a>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-12 text-white ab-para">
-            <!-- <h1>Who am I <i class="fas fa-question"></i></h1>
-            <hr class="w-15 mr-5 pt-5 border-light"> -->
-            <p class="text-justify text-center"> 
-              HI, Iam <span class="text-warning"> Darpan Singh.</span> A freelancer of Graphic & Web designing,while continuing my graduation i thought to make my "Talnet" into profession,
-             <br><br>I love learning new and better ways to create seamless 
-             <br>user experiences with clean, efficient, and scalable code.
-            </p>
-            <a class="btn resume" href="#">
-            <button class="btn btn-outline-light" >RESUME</button>
-          </a>
-          </div>
-      </div>
-  
-      </div>
-  </div>
-</section>
-<!-- end about me section  -->
-<!-- project start  -->
-
-<section id="project">
-  <div class="container-fluid shadow pb-5 bgimg2">
-    <div class="col-12">
-      <h3 class="heading mb-3 text-center pt-5">PROJECT</h3>
-      <div class="heading-underline mb-5 w-15"></div>
-    </div>
-  <div class="card-deck text-center">
-    <div class="card">
-      <img class="card-img-top " src="/static/img/card1.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">E-commerce</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View image</button>
-
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header bg-info">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Project 1</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <img class="card-img-top" src="/IMG/bg1.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, neque.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-             </div>
-          </div>
         </div>
-
-      </div>
     </div>
-
-    <div class="card">
-      <img class="card-img-top " src="/static/img/card3.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Port-Folio</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <!-- Large modal -->
-       <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View image</button>
-
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header bg-info">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Project 1</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <img class="card-img-top" src="/IMG/bg1.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, neque.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-             </div>
-          </div>
-        </div>
-         
-      </div>
-    </div>
-
-    <div class="card">
-      <img class="card-img-top " src="/static/img/card2.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Bussiness</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View image</button>
-
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header bg-info">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Project 1</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <img class="card-img-top" src="/IMG/bg1.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, neque.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-             </div>
-          </div>
-        </div>
-    
-  </div>  
 </div>
-</section>
-
-<!-- project section ends  -->
-<section id="Skills" class="offset">
-  <div class="bg-da skills pb-5">
-    <div class="container">
-      <div class="col-12">
-        <h3 class="heading text-white mb-3 text-center pt-5">SKILLS</h3>
-        <div class="heading-underline w-15"></div>
-      </div>
-      <div class="row pt-5 text-center text-white">
-      <div class='col-lg-3 col-md-6 col-sm-12'>
-        <i class="fas fa-cogs"></i>
-        <h1>DEVOP</h1>
-          <br>
-          <div class="pl-4">
-            <ul class="row text-center">
-              <li class="rounded-circle m-2">JS</li>
-              <li class="rounded-circle m-2">CSS3</li>
-              <li class="rounded-circle m-2">HTML5</li>
-              <li class="rounded-circle m-2">Bootstrap</li>
-              <li class="rounded-circle m-2">Python</li>
-              <li class="rounded-circle m-2">Django</li>
-              <li class="rounded-circle m-2">React</li>
-             </ul>
   
-          </div>
-        
-      </div>
-      <!-- END FIRST COL -->
-      <div class='col-lg-3 col-md-6 col-sm-12'>
-        <i class="fas fa-tools"></i>
-        <h1>TOOLS</h1>
-        <div class="tools-wrapper">
-        <p>Git + Github</p> 
-        <p>Command Line </p>
-        <p>Chrome DevTools</p>
-        </div>
-      </div>
-      <!-- END SECOND COL -->
-      <div class='col-lg-3 col-md-6 col-sm-12'>
-        <i class="fas fa-palette"></i>
-        <h1>DESIGN</h1>
-        <img src="/static/img/photoshop.png" alt="sketch" class="img-fluid">
-          <img src="/static/img/coreldraw.png" alt="" class="img-fluid">
-          <img src="/static/img/illustrator.png"  class="img-fluid ml-2">
-          <img src="/static/img/white-inde.png" alt="" class="img-fluid ml-2">
-      </div>
-      <!-- END THIRD COL -->
-      <div class='col-lg-3 col-md-6 col-sm-12'>
-        <i class="far fa-lightbulb"></i>
-        <h1>OTHERS</h1>
-        <p>ECMAScript 6</p> <p>CSS Detangling</p>
-      </div>
-      </div>
-    </div>
-  </div>
+    <!-- end about  -->
 
-
-</section>
-
-<!-- contact section  -->
-
-<section id="contact">
-  <div class="bgimg3">
-  <div class="container">
-    <div class="col-12">
-      <h3 class="heading text-white mb-3 text-center pt-5">CONTACT US</h3>
-      <div class="heading-underline w-15"></div>
-    </div>
-    <div class="row pb-5">
-      <div class="col-md-7">
-        <h1 class="text-left">Registeration Form </h1>
-        <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, sequi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nulla.</p>
-      </div>
-
-      <div class="col-md-5 mb-4">
-
-        <div class="row">
-          <div class="col-md-6">
-            <h3 class="text-left pt-4">MESSAGE </h3>
-          </div>
-          <div class="col-md-6">
-            <span class="glyphicon px-3 mt-4"><i class="fas fa-pencil-alt"></i></span>
-          </div>
-        </div>
-         <hr class="bg-light">
-        <!-- close  -->
-        <!-- another column for text box -->
-        <div class="row">
-          <label class="label col-md-3 control-label"><i class="fas fa-user-circle px-1"></i>Name</label>
-          <div class="col-md-9">
-            <input type="text" class="form-control" name="name" placeholder="NAME">
-          </div>
-        </div>
-
-        <div class="row">
-          <label class="label col-md-3 control-label"><i class="fas fa-envelope px-1"></i>Email</label>
-          <div class="col-md-9">
-            <input type="email" class="form-control" name="Email" placeholder="E-mail">
-          </div>
-        </div>
-
-        <div class="row">
-          <label class="label col-md-3 control-label"><i class="fas fa-mobile-alt px-1"></i>Mobile</label>
-          <div class="col-md-9">
-            <input type="number" class="form-control" name="Mobile number" placeholder="Mobile number">
-          </div>
-        </div>
-
-        <div class="row">
-          <label class="label col-md-3 control-label"><i class="far fa-comment-alt px-1"></i>Message</label>
-          <div class="col-md-9">
-            <textarea class="form-control"></textarea>
-          </div>
-        </div>
-        <button class="btn btn-warning btnmsg" href="" data-target="#">Send Message</button>
-
-      </div>
-
-    </div>
-  </div>
-  </div>
-</section>
-
-
-<!-- <footer id="footer"> -->
-  <!-- <div class="row justify-content-center bg-dark text-white pt-5">
+    <!--projects  -->
+  <div class="projectbg" id="pjct">  
     <div class="container-fluid">
-    <div class="row"> 
-      <div class="col-lg-3 col-md-6 col-sm-12 pl-5">
-        <h3>ABOUT US</h3>
-        <p class="text-white-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem maxime laudantium expedita ipsum culpa aliquid amet?</p>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 pl-5 ">
-        <h4>Vist us</h4>
-        <p class="text-white-50">HOME</p>
-        <p class="text-white-50">MISSIONS</p>
-        <p class="text-white-50">COLLECTIONS</p>
-        <p class="text-white-50">GALLERY</p>
-        <p class="text-white-50">CONTACT</p>
-      </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 footer-contact pl-5 ">
-          <h4>Need Help?</h4>
-          <p class="text-white-50">
-            CUSTOMER SERVICE<br>
-            CHAT SERVICE<br>
-            SUPPORT SERVICE
-            <p class="text-info font-weight-bold">linolnstep@gmail.com</p>
-          </p>
+      <h2 class="text-white text-center pt-5 prj-txt">Projects</h2>
+      <div class="row pt-4 pb-5">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card mx-auto cds">
+            <img src="/static/img/card1.jpg" class="card-img-top img-fluid cdimg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="cds-btn">
+                <a href="#" class="btn text-white" style="background-color:#17a392">View More</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 pr-3">
-          <h4>Stay Connected</h4> -->
-          <!-- <p class="text-white-50">Lorem ipsum dolor sit amet consectetur aperiam ullam repellendus odit neque vitae iure a illum.</p> -->
-          <!-- <input type="email" class="form-control" id="exampleInputEmail1" placeholder="EMAIL" aria-describedby="emailHelp"><button type="submit" class="btn btn-danger">SIGN UP</button> -->
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="email" placeholder="Email Address" aria-label="email">
-            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Sign Up</button>
-          </form>
-          <a href="https://www.facebook.com/darpan.singh.7503" target="_blank"><i class="fab fa-facebook text-primary"></i></a>
-          <a href="https://twitter.com/DarpanSinghk" target="_blank"><i class="fab fa-twitter text-info"></i></a>
-          <a href="https://twitter.com/DarpanSinghk" target="_blank"><i class="fab fa-quora text-danger"></i></a>
-          <a href="https://www.instagram.com/the_jingzi02/" target="_blank"><i class="fab fa-youtube text-danger"></i></a> 
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card mx-auto cds">
+            <img src="/static/img/j.jpg" class="card-img-top img-fluid cdimg" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="cds-btn">
+                <a href="#" class="btn text-white" style="background-color:#17a392">View More</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <hr class="w-100 mx-auto pt-2 border-light mt-5">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card mx-auto cds">
+            <img src="/static/img/card3.jpg" class="card-img-top img-fluid cdimg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="cds-btn">
+                <a href="#" class="btn text-white" style="background-color:#17a392">View More</a>
+              </div>
+             
+            </div>
+          </div>
+        </div>
       
-    
+      </div>
 
-    </div> -->
-    <!-- <hr class="border-light"> -->
-    <!-- <div class="col-12 bg-dark text-white text-center pb-4">
-      <div class="copyrght">
-        &copy; 2020 Copyright <strong>DARPAN</strong> All Rights Reserved
+    </div>
+  </div>  
+    
+    <!-- end projects -->
+
+    <!-- skills -->
+    <div class="sksbg">
+    <div class="container-fluid">
+      <h2 class="text-dark text-center pt-5 sks-txt">Skills</h2>
+      <div class="row sks-adjs">
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center ">
+          <h3 class="sks-titles  pt-5"><span><i class="fas fa-code"></i></span> Develop</h3>
+          <div class="text-justify pt-3 text-center sks-data">
+            <p>CSS3</p>
+            <p>PYTHON</p>
+            <p>HTML5</p> 
+            <p>BOOSTRAP</p>
+            <p>REACT</p>
+            <p>DJANGO</p>
+            <p>JAVA SCRIPT</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center sks-data">
+          <h3 class="sks-titles pt-5"><span><i class="fas fa-palette"></i></span> Design</h3>
+          <div  class="text-justify pt-3 text-center sks-data">
+          <p>ADOBE PHOTOSHOP</p>
+          <p>INDESIGN</p>
+          <p>ILLLUSTRATOR</p>
+          <p>CORAL DRAW</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center sks-data">
+          <h3 class="sks-titles pt-5"><span><i class="fas fa-tools"></i></span> Tools</h3>
+          <div class="text-justify pt-3 text-center sks-data">
+            <p>GIT</p>
+            <p>CHROME DEV TOOLS</p>
+            <p>GITHUB</p>
+            <p>STACK OVERFLOW</p>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <!-- end skills -->
+
+    <!-- lincolnste -->
+    
+    <!-- end lincolnstep -->
+
+
+    <!-- footer contact -->
+    <div class="footerbg" id="cnt">
+    <div class="container-fluid">
+    <div class="row pt-5 foot-adj">
+      <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+        <h2 class="text-center text-white foot-titles"><span><i class="fas fa-link"></i></span> Links</h2>
+        <div>
+          <a class="nav-link text-muted foot-data" href="#">Home</a>
+          <a class="nav-link text-muted foot-data" href="#">About me</a>
+          <a class="nav-link text-muted foot-data" href="#">Projects</a>
+          <a class="nav-link text-muted foot-data" href="#">Contact</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h2 class="text-center text-white foot-titles"><span><i class="fas fa-user-circle"></i></span> Social Media</h2>
+        <div class="abticon text-center pb-3">
+          <a href="https://www.facebook.com/profile.php?id=100013910611307">  <i class="fab fa-facebook-square text-priary"></i></a>
+          <a href="https://www.instagram.com/manish_791455/?hl=en"><i class="fab fa-instagram-square text-danger pr-4 pl-4"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=9494151577"><i class="fab fa-whatsapp-square text-success"></i></a>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h2 class="text-center text-white foot-titles"><span><i class="fas fa-phone-volume c-icon"></i></span> Contact</h2>
+        <p class="text-center text-muted foot-data">Mobile:9494151577</p>
+        <p class="text-center text-muted foot-data">Email:</p>
+        <p class="text-center text-muted foot-data">manishkumardec17@gmail.com</p>
+
       </div>
     </div>
     </div>
-  </footer> -->
-
-
-      
-
-    
-<footer id="sticky-footer" class="text-white-50">
-  <div class="container-fluid text-light bg-dark  text-center fixed-bottom p-2">
-            <small>&copy; Copyright 2020,By Darpan Singh <i class="fa fa-heart text-danger"></i> 
-  
+    <!-- copyrights -->
+    <h6 class="text-center pb-5">Copyrights <span style="color: yellow;"><i class="far fa-copyright"></i></span> Manish Kumar</h6>
   </div>
-</footer>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15094.779871241746!2d84.57635901865454!3d18.944891144610366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d12beac5e66d1%3A0xa72168621bc6c63e!2sSompeta%2C%20Andhra%20Pradesh%20532284!5e0!3m2!1sen!2sin!4v1594000702226!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="w-100"></iframe>
+    <!-- end footer -->
 
+    <!-- map -->
+    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15094.779871241746!2d84.57635901865454!3d18.944891144610366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d12beac5e66d1%3A0xa72168621bc6c63e!2sSompeta%2C%20Andhra%20Pradesh%20532284!5e0!3m2!1sen!2sin!4v1594129446162!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
+    
+   
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>

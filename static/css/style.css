@@ -1,635 +1,332 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
+.navbg{
+    background-image: url(/static/img/mountain-984083_1920.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-html{
-    scroll-behavior: smooth;
+.aboutbg{
+    background-color: #e9f2f2;
 }
-
-
+.projectbg{
+    background-color: #061021;
+}
+.sksbg{
+    background-color: #c3d4cd;
+}
+.footerbg{
+    background-color: #0f0f0f;
+}
 
 body{
     overflow-x: hidden;
-    font-family: 'Lato',sans-serif;
-    color: #505962;
 }
-.navbar{    
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: .9rem;
-    letter-spacing: .1rem;
-    background: rgba(0, 0, 0, 0.6)!important;
+.cds-btn{
+     display: flex; justify-content: center;
+}
+.cdimg:hover{
+    transform:scale(1.1);
+    transition: transform 0.4s;
 
 }
-.navbar-nav li{
-    padding-right: .7rem;
-}
-.navbar-dark .navbar-nav .nav-link{
-    padding-top: .7rem;
-}
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover{
-    color: #1ebba3;
-}
 
-/* landing page css */
-.home-inner{
-    background-image: url(/static/img/cmp.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 760px;
-    background-position: center;
-}
-.caption{
-    width: 100%;
-    max-width: 100%;
-    position: absolute;
-    top: 40%;
-    z-index: 1;
-    text-transform: uppercase;
-}
 
-@media only screen and (max-width:768px){
-    .caption h1{
-        font-size: 2.2rem;
-        font-weight: 700;
-        letter-spacing: .1rem;
-        text-shadow: .1rem,.1rem,.8rem,black;   
+
+
+@media only screen and (max-width:768px) {
+    /* bg title */
+    .bg-title{
+        text-align: center;
+        margin-top: 150px;
+        
     }
-    .abm{
+    .bg-title h2{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .bg-title h3{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    /* end bg-title */
+     /* propic */
+   .propic{
+    width: 180px;
+    height: 180px;
+}
+    /* am-txt */
+    .am-txt{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .am-mk{
+        text-align: center;
+    }
+    .am-deta{
+        font-size: 13px;
+    }
+    .am-btn{
+        display: flex; justify-content: center;
+    }
+    .navbg{
+        height: 80vh;
+    }
+    .navbar-brand{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .abticon{
         font-size: 25px;
+       
     }
-    #aboutMe img{
-        width: 150px;
+    .cds{
+        width: 280px;
+        margin-top: 20px;
+        
+    }
+    .cdimg{
+        width: 280px;
         height: 150px;
     }
-    #aboutMe .title{
-        font-weight: 700;
-        letter-spacing: 1px;
-    }
-    #aboutMe .prof{
-        font-family: 'Raleway', sans-serif;
-        font-size: 10px;
-        letter-spacing: 1px;
-        color: rgb(223, 222, 222);
-    }
-    .fa-facebook-f{
-        font-size: 20px;
-        /* margin-left: 18px; */
-        color: white;
-    }
-    .fa-twitter{
-        font-size: 20px;
-        /* margin-left: 220px; */
-        color: white;
-    
-    }
-    .fa-instagram{
-        font-size: 20px;
-        /* margin-left: 18px; */
-        color: white;
-    
-    }
-    .ab-para{
-        font-size: 12px;
-        margin-top: 17px;
-    }
-    .resume{
-       display: flex;justify-content: center;
-    }
-    #Skills .skills{
-        background-color:#1b1b1b;
-    }
-    #Skills h3{
-        font-size: 1.9rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    
-    }
-    #Skills h1{
-        font-weight: bold;
+    .prj-txt{
         font-size: 30px;
-    }
-    .rounded-circle{
-        width: 70px;
-        height: 70px;
-        display: inline-block;
-        line-height: 7;
-        border: 1px solid rgba(243, 238, 238, 0.5);
-        border-radius: 50%;
-    }
-    #Skills li{
-        font-size: 10px;
-    }
-    #Skills img{
-        margin-top: 30px;
+        font-weight: bold;
     
     }
-    #Skills i{
-        margin-top: 30px;
-        color: #1ebba3;
+    .sks-titles{
+        font-size: 25px;
     }
-    #Skills img{
-        height:30px;
-        width:30px;
+    .sks-data{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .sks-titles{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .sks-txt{
+        font-size: 30px;
+        font-weight: bold;
+    
+    }
+    .sks-adjs{
+        padding-top: 1px;
+        padding-bottom: 10px;
+    }
+    .foot-titles{
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 20px;
+    
+    }
+    .foot-adj{
+        padding-bottom: 50px;
+    }
+    .foot-data{
+        font-size: 14px;
+    }
+    
+    
+    
+    
+    
+    
+    
 
-    }
-    .bgimg3{
-        background-image: url(/static/img/black.jpg);
-        background-size: cover;
-        background-position: center;
-        /* font-family: Georgia, 'Times New Roman', Times, serif ; */
-    }
-    #contact .row{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    #contact h1{
-        font-size: 40px;
-        color: white;
+}
+@media only screen and (min-width:768px) {
+    /* bg-title */
+    .bg-title{
+        text-align: right;
         margin-top: 150px;
     }
-    #contact p{
-        font-size: 17px;
-        color: white;
-    }
-    #contact h3{
-        font-size: 27px;
-        color: white;
-    }
-    .glyphicon{
-        font-size: 30px;
-        color: white;
-        float: right;
-    }
-    .col-md-5{
-        margin-top: 70px;
-        box-shadow: -1px 1px 60px 10px rgb(0, 0, 0);
-        background-color: rgba(0,0,0,0.4);
-    }
-    .label{
-        font-weight: normal;
-        margin-top: 30px;
-        color: white;
-        font-size: 19px;
-    }
-    .form-control{
-        background: transparent;
-        border-radius: 0px;
-        border: 0px;
-        border-bottom: 1px solid white ;
-        font-size: 18px;
-        margin-top: 15px;
-        height: 40px;
-        color: white;
-        width: 90%;
-        margin-left: 30px;
-    }
-    .btnmsg{
-        margin-left: 40%;
-        margin-right: 40%;
-        margin-top: 20px;
-        margin-bottom: 20px ;
-        
-    }
-    #contact hr{
-        width: 85%;
-        margin-left: 40px;
-    }
-    
-}
-
-/* medium query */
-
-@media only screen and (min-width:768px){
-    .caption h1{
-        font-size: 3.5rem;
-        font-weight: 700;
-        letter-spacing: .1rem;
-        text-shadow: .1rem,.1rem,.8rem,black;   
-    }
-    .abm{
-        font-size: 35px;
-    }
-    #aboutMe img{
-        width: 200px;
-        height: 200px;
-    }
-    #aboutMe .title{
-        font-weight: 700;
-        letter-spacing: 1px;
-        font-size: 30px;
-    }
-    #aboutMe .prof{
-        font-family: 'Raleway', sans-serif;
-        font-size: 14px;
-        letter-spacing: 1px;
-        color: rgb(223, 222, 222);
-    }
-    .fa-facebook-f{
-        font-size: 30px;
-        /* margin-left: 18px; */
-        color: white;
-    }
-    .fa-twitter{
-        font-size: 30px;
-        /* margin-left: 220px; */
-        color: white;
-    
-    }
-    .fa-instagram{
-        font-size: 30px;
-        /* margin-left: 18px; */
-        color: white;
-    
-    }
-    .ab-para{
-        font-size: 18px;
-        margin-top: 21px;
-    }
-    .resume{
-        display: flex;justify-content: center;
-     }
-     #Skills .skills{
-        background-color:#1b1b1b;
-    }
-    #Skills h3{
-        font-size: 1.9rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    
-    }
-    #Skills h1{
+    .bg-title h2{
+        font-size: 50px;
         font-weight: bold;
-        font-size: 37px;
+    }
+    .bg-title h3{
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+     /* propic */
+   .propic{
+    width: 200px;
+    height: 200px;
+}
+    /* end bg-title */
 
+    /* am-txt */
+    .am-mk{
+        text-align: justify;
     }
-    .rounded-circle{
-        width: 75px;
-        height: 75px;
-        display: inline-block;
-        line-height: 5;
-        border: 1px solid rgba(243, 238, 238, 0.5);
-        border-radius: 50%;
+    .am-txt{
+        font-size: 35px;
+        font-weight: bold;
     }
-    #Skills li{
+    .am-deta{
         font-size: 15px;
     }
-    #Skills img{
-        margin-top: 30px;
-    
+    .am-btn{
+        display: flex; justify-content: left;
     }
-    #Skills i{
-        margin-top: 30px;
-        color: #1ebba3;
+    .navbg{
+        height: 85vh;
     }
-    #Skills img{
-        height:40px;
-        width:40px;
-
-    }
-    .bgimg3{
-        background-image: url(/static/img/black.jpg);
-        background-size: cover;
-        background-position: center;
-        /* font-family: Georgia, 'Times New Roman', Times, serif ; */
-    }
-    #contact .row{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    #contact h1{
-        font-size: 40px;
-        color: white;
-        margin-top: 150px;
-    }
-    #contact p{
-        font-size: 17px;
-        color: white;
-    }
-    #contact h3{
-        font-size: 27px;
-        color: white;
-    }
-    .glyphicon{
-        font-size: 30px;
-        color: white;
-        float: right;
-    }
-    .col-md-5{
-        margin-top: 70px;
-        box-shadow: -1px 1px 60px 10px rgb(0, 0, 0);
-        background-color: rgba(0,0,0,0.4);
-    }
-    .label{
-        font-weight: normal;
-        margin-top: 30px;
-        color: white;
-        font-size: 19px;
-    }
-    .form-control{
-        background: transparent;
-        border-radius: 0px;
-        border: 0px;
-        border-bottom: 1px solid white ;
-        font-size: 18px;
-        margin-top: 15px;
-        height: 40px;
-        color: white;
-    }
-    .btnmsg{
-        margin-left: 40%;
-        margin-right: 40%;
-        margin-top: 20px;
-        margin-bottom: 20px ;
-        
-    }
-    
-}
-@media only screen and (min-width:1200px){
-    .caption h1{
-        font-size: 4.3rem;
-        font-weight: 700;
-        letter-spacing: .1rem;
-        text-shadow: .1rem,.1rem,.8rem,black;   
-    }
-    .abm{
-        font-size: 45px;
-    }
-    #aboutMe img{
-        width: 250px;
-        height: 250px;
-    }
-    #aboutMe .title{
-        font-weight: 700;
-        letter-spacing: 1px;
-        font-size: 35px;
-    }
-    #aboutMe .prof{
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        letter-spacing: 1px;
-        color: rgb(223, 222, 222);
-    }
-    .fa-facebook-f{
-        font-size: 35px;
-        /* margin-left: 18px; */
-        color: white;
-    }
-    .fa-twitter{
-        font-size: 35px;
-        /* margin-left: 220px; */
-        color: white;
-    
-    }
-    .fa-instagram{
-        font-size: 35px;
-        /* margin-left: 18px; */
-        color: white;
-    
-    }
-    .ab-para{
+    .navbar-brand{
         font-size: 20px;
-        /* margin-top: 21px; */
+        letter-spacing: 1px;
     }
-    .resume{
-        display: flex;justify-content: center;
-    }
-    #Skills .skills{
-        background-color:#1b1b1b;
-    }
-    #Skills h3{
-        font-size: 1.9rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    
-    }
-    #Skills h1{
-        font-weight: bold;
-        font-size: 40px;
-
-    }
-    .rounded-circle{
-        width: 85px;
-        height: 85px;
-        display: inline-block;
-        line-height: 5;
-        border: 1px solid rgba(243, 238, 238, 0.5);
-        border-radius: 50%;
-    }
-    #Skills img{
-        margin-top: 30px;
-    
-    }
-    #Skills i{
-        margin-top: 30px;
-        color: #1ebba3;
-    }
-    #Skills img{
-        height:60px;
-        width:60px;
-
-    }
-    .bgimg3{
-        background-image: url(/static/img/black.jpg);
-        background-size: cover;
-        background-position: center;
-        /* font-family: Georgia, 'Times New Roman', Times, serif ; */
-    }
-    #contact .row{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    #contact h1{
-        font-size: 40px;
-        color: white;
-        margin-top: 150px;
-    }
-    #contact p{
-        font-size: 17px;
-        color: white;
-    }
-    #contact h3{
-        font-size: 27px;
-        color: white;
-    }
-    .glyphicon{
+    .abticon{
         font-size: 30px;
-        color: white;
-        float: right;
+       
     }
-    .col-md-5{
-        margin-top: 70px;
-        box-shadow: -1px 1px 60px 10px rgb(0, 0, 0);
-        background-color: rgba(0,0,0,0.4);
-    }
-    .label{
-        font-weight: normal;
-        margin-top: 30px;
-        color: white;
-        font-size: 19px;
-    }
-    .form-control{  
-        background: transparent;
-        border-radius: 0px;
-        border: 0px;
-        border-bottom: 1px solid white ;
-        font-size: 18px;
-        margin-top: 15px;
-        height: 40px;
-        color: white;
-    }
-    .btnmsg{
-        margin-left: 40%;
-        margin-right: 40%;
-        margin-top: 20px;
-        margin-bottom: 20px ;
+    .cds{
+        width: 230px;
         
     }
+    .cdimg{
+        width: 230px;
+        height: 150px;
+    }
+    .prj-txt{
+        font-size: 35px;
+        font-weight: bold;
     
+    }
+    .sks-data{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .sks-titles{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .sks-txt{
+        font-size: 35px;
+        font-weight: bold;
     
-}
-
-/* changing media q */
-
-@media only screen and (max-width:768px){
-    .caption h3{
-        font-size: 1rem;
-        text-shadow:.1rem,.1rem,.5rem, black;
-        letter-spacing: 1px;
-        /* background-color: gold; */
+    }
+    .sks-adjs{
+        padding-top: 1px;
+        padding-bottom: 10px;
+    }
+    .foot-titles{
+        font-weight: bold;
+        font-size: 25px;
+    
+    }
+    .foot-adj{
+        padding-bottom: 50px;
+    }
+    .foot-data{
+        font-size: 14px;
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+}
+@media only screen and (min-width:992px) {
+    /* bg-title */
+    .bg-title{
+        text-align: right;
+        margin-top: 220px;
+    }
+    .bg-title h2{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .bg-title h3{
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    /* end bg-title */
+
+    /* propic */
+   .propic{
+       width: 250px;
+       height: 250px;
+   }
+
+   /* am-txt */
+   .am-txt{
+    font-size: 40px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.am-deta{
+    font-size: 16px;
+}
+.navbg{
+    height: 100vh;
+}
+.navbar-brand{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.abticon{
+    font-size: 37px;
    
 }
-@media only screen and (min-width:768px){
-    .caption h3{
-        font-size: 1.8rem;
-        text-shadow:.1rem,.1rem,.5rem, black;
-        letter-spacing: .2rem;
-        /* background-color: gold; */
-    }
+.cds{
+    width: 300px;
+}
+.cdimg{
+    width: 300px;
+    height: 200px;
     
 }
-@media only screen and (min-width:1200px){
-    .caption h3{
-        font-size: 2.3rem;
-        text-shadow:.1rem,.1rem,.5rem, black;
-        letter-spacing: .2rem;
-        /* background-color: gold; */
-    }
-    
-}
-     
-/* about me css */
-
-
-.black-bg{
-    background-color: rgb(3, 44, 78);
-}
-.heading-underline2{
-    background-color: white;
-    width: 5rem;
-    height: .1rem;
-    margin: 0 auto;
-}
-
-
-/* project css */
-.bgimg2{
-    background-image: url(/static/img/j.jpg); 
+.prj-txt{
+    font-size: 40px;
+    font-weight: bold;
 
 }
-.bg-overlay {
-    background-color:rgba(0,0,0,0.50);
-
-    /* height: 100%;
-    width: 100%; */
-    /* padding: 4rem 2rem;
-    background-size: cover;
-    background-position: center; */
+.sks-data{
+    font-size: 17px;
+    font-weight: 500;
 }
-
-#project .card-body{
-    box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
-
-}
-#project .card{
-    border-radius: 0;
-    box-shadow: 5px 5px 15px #1b1b1b;   
-    transition: all 0.3s ease-in;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-}
-#project .card:hover{
-    background: #1b1b1b;
-    color: aliceblue;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 5px 5px 8px rgb(30, 241, 189);
-
-}
-
-.heading{
-    font-size: 1.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-
-}
-.heading-underline{
-    width: 7rem;
-    height: .2rem;
-    background-color: gray;
-    margin: 0 auto;
-}
-/* project section end  */
-
-
-/* font awesomes css */
-.fa-palette{
-    font-size: 27px;
-    margin-right: 7px;
-
-
-}
-.fa-cogs{
-    font-size: 25px;
-}
-.fa-tools{
-    font-size: 25px;
-    margin-right: 6px;
-}
-.fa-lightbulb{
+.sks-titles{
+    font-weight: bold;
     font-size: 30px;
 }
-/* font awesome end  */
-
-/* contact css */
-
-
-
-/* footer css */
-
-.fa-instagram:hover{
- color: #1ebba3;
+.sks-txt{
+    font-size: 40px;
+    font-weight: bold;
 
 }
-.fa-twitter:hover{
-    color: #1ebba3
+.sks-adjs{
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+.foot-titles{
+    font-weight: bold;
+    font-size: 30px;
 
 }
-.fa-facebook-f:hover{
-    color: #1ebba3
-    
+.foot-adj{
+    padding-bottom: 100px;
 }
-.pb-1{
-    color: whitesmoke;
+.foot-data{
+    font-size: 17px;
 }
 
 
 
+}
 
+.c-icon{
+    animation: shakeX;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+}
